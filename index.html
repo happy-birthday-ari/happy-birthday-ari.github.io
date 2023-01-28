@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Happy Birthday Ari!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=block" rel="stylesheet" /> 
+    <style type="text/css">
+      * {
+        font-family: 'Lora';
+      }
+      body {
+        margin: 0;
+        padding: 0 3.236em;
+        box-sizing: border-box;
+      }
+      #bday-video {
+        box-sizing: border-box;
+        display: inline-block;
+        max-width: 100%;
+        border: 0.618em solid pink;
+        border-radius: 1.618em;
+      }
+      #bday-video video {
+        box-sizing: border-box;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body style="opacity:0;transition:opacity 0.618s linear">
+    <div style="height:100px;transition:height 0.618s linear" id="fadeout"></div>
+    <center><h1>Happy Birthday Ari!</h1></center>
+    
+    <center style="margin:1em">
+      Happy birthday to you <br />
+      Happy birthday to you <br />
+      Happy birthday, dear Ari <br />
+      Happy birthday to you. 
+    </center>
+    
+    <center>
+      <span id="bday-video">
+        <video controls>
+          <source src="HappyBdayAriHD.mp4" type="video/mp4">
+          Your browser does not support the video tag. So sorry for this let-down, Ari :(
+        </video> 
+      </span>
+    </center>
+    
+    <p>Ari, you are the best thing that has happened in my life, and I hope you have an awesome birthday. You deserve it!</p>
+  <body>
+</html>
+<script type="text/javascript">
+  function onload() {
+    document.body.style.opacity = "1";
+    document.getElementById("collapseout").style.height = "0px";
+  }
+  setTimeout(onload, 3000);
+</script>
